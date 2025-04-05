@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>PokéAPI Practice</title>
+    <style>
+      body {
+        font-family: tahoma, 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      #pokemon-info {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        text-align: center;
+      }
+
+      input#pokemon {
+        padding: 10px;
+        background-color: #ffcd01;
+        border: 2px solid rgb(108, 33, 3);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 300px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #0e60af;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 4px 6px black;
+      }
+
+      button:hover {
+        background-color: #6cbde9;
+        color:rgb(0, 0, 0)
+      }
+
+      #pokemon-info {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Pokemon Database</h1>
+      <form>
+        <input
+          type="text"
+          id="pokemon"
+          name="pokemon"
+          placeholder="Choose Pokemon"
+        />
+        <br /><br />
+        <button type="submit">Click to catch</button>
+      </form>
+      <div style="text-align: center; margin-top: 20px">
+        <img
+          src="./images/catch-em.png"
+          alt="Gotta catch 'em all"
+          style="width: 175px; height: auto"
+        />
+      </div>
+      <div id="pokemon-info">Gotta catch 'em all! 😈</div>
+    </div>
+    <script src="poke-script.js"></script>
+  </body>
+</html>
